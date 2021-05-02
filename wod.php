@@ -10,6 +10,8 @@ $wod = strtoupper(strip_tags($wordoftheday[0])); // Remove html tags
 include_once 'dictionary.class.php';
 
 $dictionary = new Dictionary("xxxxx", "xxxxxxxxxx", "en-gb");
+//https://developer.oxforddictionaries.com/
+
 $dictionary->newDictionaryRequest($wod );
 
 
